@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My restaurant</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class="wrpaper">
+     <nav class="menu">
+       <button aria-expanded="false" aria-controls="menu-list">
+         <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+            <ul id="menu-list">
+            <li>
+              <a href="">Tacos</a>
+            </li>
+            <li>
+              <a href="">Beers</a>
+            </li>
+            <li>
+              <a href="">Wines</a>
+            </li>
+            <li>
+              <a href="">Desserts</a>
+            </li>
+            <li>
+              <a href="">Reservations</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="top">
+      <header class="hero">
+        <h1>Food first Restaurant</h1>
+        <p>Pretty Good taste!</p>
+      </header>
+      <div class="cta cta1">
+        <p class="price">$1.99</p>
+        <p>Tacos</p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">$3.99</p>
+        <p>Kombucha</p>
+      </div>
+
+      <section class="features">
+      <div class="feature">
+        <span class="icon">🌮</span>
+        <h3>Tacos</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍺</span>
+        <h3>Beer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍷</span>
+        <h3>Wine</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🎵</span>
+        <h3>Music</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+    </section>
+
+     <section class="about">
+      <img src="Nigerian beans1.jpg" alt="yumm food first" class="about__mockup">
+      <div class="about__details">
+        <h2>Feartured Bread and Beans</h2>
+        <p>Easy to cook and eat.</p>
+        <p>This is the one you have been waiting for</p>
+        <button>Learn More →</button>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Instant Grams</h2>
+      <img src="food1.webp" alt="">
+      <img src="food2.jpg"  alt="">
+      <img src="foodlike.jpg" alt="">
+      <img src="food4.jpg"  alt="">
+      <img src="food5.jpg" alt="">
+      <img src="food6.jpg" alt="">
+      <img src="food7.jpg"  alt="">
+      <img src="food8.jpg" alt="">
+      <img src="food9.jpg"  alt="">
+      <img src="food10.jpg" alt="">
+    </section>
+  </div>
+
+
+
+    <script src="script.js"></script>
+    <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+  </body>
+</html>
